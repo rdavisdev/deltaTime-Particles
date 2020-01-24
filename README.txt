@@ -5,7 +5,7 @@ Libraries Required:
 	sfml
 	
 Implementation:
-	This engine uses the concept of pre-calculating particle's behavior as a polynomial equation, and setting each particle up with the coefficients at the beginning of it's life.
+	This engine uses the concept of deterministic particle behavior as a polynomial equation, and setting each particle up with the coefficients at the beginning of it's life.
 	This way, the only thing required to be updated for each particle every frame is the time since it's life began. Only one variable for the entire particle!
 	This allows for huge numbers of particles to be moving at once, the current hard coded amount is 10,000 a second.
 	The coefficients are batched as one push, and only happens when a new particle is added, or a particle is deleted.
